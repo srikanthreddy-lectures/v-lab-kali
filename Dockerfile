@@ -24,7 +24,7 @@ RUN git clone https://github.com/kanaka/noVNC.git /root/noVNC \
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Modify the launch script 'ps -p'
-RUN sed -i -- "s/ps -p/ps -o pid | grep/g" /root/noVNC/utils/launch.sh
+RUN sed -i -- "s/ps -p/ps -o pid | grep/g" /root/noVNC/utils/novnc_proxy
 
 EXPOSE 8080
 
