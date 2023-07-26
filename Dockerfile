@@ -31,3 +31,4 @@ CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 
 # Set working directory to /root
 WORKDIR /root
+
