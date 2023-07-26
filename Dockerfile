@@ -12,7 +12,7 @@ RUN apt install dbus-x11 aircrack-ng crackmapexec crunch curl dirb dirbuster dns
 # DE and vncserver
 RUN DEBIAN_FRONTEND=noninteractive apt install -y xfce4 xfce4-goodies x11vnc xvfb
 RUN mkdir ~/.vnc
-RUN x11vnc -storepasswd 1234 ~/.vnc/passwd
+RUN x11vnc -storepasswd kmit ~/.vnc/passwd
 
 # Clone noVNC from github
 RUN git clone https://github.com/kanaka/noVNC.git /root/noVNC \
