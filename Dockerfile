@@ -7,7 +7,7 @@ FROM kalilinux/kali-rolling
 RUN apt -y update && apt -y upgrade && apt -y autoremove && apt clean
 
 # Tools
-RUN apt install dbus-x11 curl netcat-traditional nikto nmap nano whois novnc -y --no-install-recommends
+RUN apt install dbus-x11 aircrack-ng crackmapexec crunch curl dirb dirbuster dnsenum dnsrecon dnsutils dos2unix enum4linux exploitdb ftp git gobuster hashcat hping3 hydra impacket-scripts john joomscan masscan metasploit-framework mimikatz nasm ncat netcat-traditional nikto nmap patator php powersploit proxychains python3-pip python2 python3 recon-ng responder samba samdump2 smbclient smbmap snmp socat sqlmap sslscan theharvester vim wafw00f weevely wfuzz whois wordlists wpscan novnc -y --no-install-recommends
 
 # DE and vncserver
 RUN DEBIAN_FRONTEND=noninteractive apt install -y xfce4 xfce4-goodies x11vnc xvfb
